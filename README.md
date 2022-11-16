@@ -2,4 +2,4 @@
 =============
 Developer Skill
 -------------
-##### Spring boot , JAVA 11 ,Maven, MySQL,Spring JPA
+##### Spring boot , JAVA 11 ,Maven, MySQL,Spring JPA,Thymeleaf
