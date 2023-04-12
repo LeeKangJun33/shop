@@ -39,7 +39,7 @@ class ItemRepositoryTest {
     @DisplayName("상품저장 테스트")
     public void createItemTest(){
         Item item = new Item();
-        item.setItemNum("테스트상품");
+        item.setItemNm("테스트상품");
         item.setPrice(10000);
         item.setItemDetail("테스트 상품 상세 설명");
         item.setItemSellStatus(ItemSellStatus.SELL);
@@ -53,7 +53,7 @@ class ItemRepositoryTest {
     public void createItemList(){
         for (int i=1; i<=10; i++){
             Item item = new Item();
-            item.setItemNum("테스트상품"+i);
+            item.setItemNm("테스트상품"+i);
             item.setPrice(10000+i);
             item.setItemDetail("테스트 상품 상세 설명"+i);
             item.setItemSellStatus(ItemSellStatus.SELL);
@@ -67,7 +67,7 @@ class ItemRepositoryTest {
     @DisplayName("상품명 조회 테스트")
     public void findByItemNmTest(){
         this.createItemList();
-        List<Item> itemList =itemRepository.findByItemNum("테스트상품1");
+        List<Item> itemList =itemRepository.findByItemNm("테스트상품1");
         for (Item item : itemList){
             System.out.println(item.toString());
         }
@@ -76,7 +76,7 @@ class ItemRepositoryTest {
     @DisplayName("상품명 조회 테스트")
     public void findByItemNumOrItemDetail(){
         this.createItemList();
-        List<Item> itemList =itemRepository.findByItemNumOrItemDetail("테스트상품1","테스트상품 상세설명5");
+        List<Item> itemList =itemRepository.findByItemNmOrItemDetail("테스트상품1","테스트상품 상세설명5");
         for (Item item : itemList){
             System.out.println(item.toString());
         }
@@ -140,7 +140,7 @@ class ItemRepositoryTest {
     public void createItemList2(){
         for (int i=1; i<=5; i++){
             Item item = new Item();
-            item.setItemNum("테스트상품"+i);
+            item.setItemNm("테스트상품"+i);
             item.setPrice(10000+i);
             item.setItemDetail("테스트 상품 상세설명"+i);
             item.setItemSellStatus(ItemSellStatus.SELL);
@@ -152,7 +152,7 @@ class ItemRepositoryTest {
 
         for (int i=6;i<=10;i++){
             Item item = new Item();
-            item.setItemNum("테스트상품"+i);
+            item.setItemNm("테스트상품"+i);
             item.setPrice(10000+i);
             item.setItemDetail("테스트 상품 상세설명"+i);
             item.setItemSellStatus(ItemSellStatus.SOLD_OUT);
