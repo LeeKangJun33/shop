@@ -32,6 +32,12 @@
 
 :gift: ERD 설계
 
+![쇼핑몰ERD drawio](https://user-images.githubusercontent.com/62988674/231766642-3ee1b318-cd78-43c0-865d-14dd0dd12608.png)
+------------------------------
 
+:computer: 프로젝트 개발 내용
 
+- 상품등록,상품관리,장바구니,구매이력,로그인/로그아웃 등 Spring Boot 와 JPA 기반으로 만들었습니다.
+- 템플릿으 만들고 동적으로 클라이언트에 전달하는방식을 사용했고, Thymeleaf 를 사용했습니다.
+- Spring Security를 사용하여 로그인/로그아웃, 회원가입 기능을 구현했습니다.
 
